@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsunKlienta">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" text="Podaj dane klienta do usunięcia:" />
+      <Label layoutX="13.0" layoutY="80.0" text="Imie:" />
+      <Label layoutX="13.0" layoutY="121.0" text="Nazwisko: " />
+      <TextField fx:id="nazwiskoC" layoutX="106.0" layoutY="117.0" />
+      <TextField fx:id="imieC" layoutX="106.0" layoutY="76.0" />
+      <Button layoutX="13.0" layoutY="163.0" mnemonicParsing="false" onAction="#usunC" style="-fx-background-color: black;" text="Usuń klienta" textFill="WHITE" />
+      <Label fx:id="resultRemC" layoutX="70.0" layoutY="200.0" prefHeight="18.0" prefWidth="202.0" />
+   </children>
+</AnchorPane>

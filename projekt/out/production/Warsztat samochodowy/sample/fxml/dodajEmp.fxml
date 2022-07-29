@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DodajEmp">
+   <children>
+      <Label layoutX="24.0" layoutY="70.0" text="Imie:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="116.0" text="Nazwisko:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="22.0" text="Podaj dane pracownika:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="imieEmp" layoutX="99.0" layoutY="66.0" />
+      <TextField fx:id="nazEmp" layoutX="99.0" layoutY="112.0" />
+      <Button layoutX="24.0" layoutY="174.0" mnemonicParsing="false" onAction="#dodajEmp" style="-fx-background-color: black;" text="Dodaj pracownika" textFill="WHITE" />
+      <Label fx:id="resultsAddEmp" layoutX="99.0" layoutY="212.0" prefHeight="18.0" prefWidth="199.0" />
+   </children>
+</AnchorPane>

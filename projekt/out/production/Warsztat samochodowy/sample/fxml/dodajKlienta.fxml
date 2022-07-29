@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dodajKlienta">
+   <children>
+      <Label layoutX="14.0" layoutY="55.0" text="Imie: ">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="14.0" text="Podaj dane klienta">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="117.0" text="Nazwisko: ">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="nazwiskoC" layoutX="118.0" layoutY="117.0" />
+      <TextField fx:id="imieC" layoutX="118.0" layoutY="55.0" />
+      <Button fx:id="btnAdd" layoutX="34.0" layoutY="216.0" mnemonicParsing="false" onAction="#dodajC" style="-fx-background-color: black;" text="Dodaj klienta" textFill="WHITE" />
+      <Label fx:id="resultsCAdd" layoutX="95.0" layoutY="254.0" prefHeight="18.0" prefWidth="193.0" />
+      <Label layoutX="14.0" layoutY="171.0" text="Opis naprawy: ">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="opis" layoutX="118.0" layoutY="171.0" />
+   </children>
+</AnchorPane>

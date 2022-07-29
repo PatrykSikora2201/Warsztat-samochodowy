@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PokazKlientow">
+   <children>
+      <TableView fx:id="tabela" layoutX="35.0" layoutY="82.0" prefHeight="214.0" prefWidth="374.0" style="-fx-background-color: #DCDCDC;">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="imie" prefWidth="75.0" text="Imie" />
+            <TableColumn fx:id="nazwisko" prefWidth="75.0" text="Nazwisko" />
+            <TableColumn fx:id="naprawa" prefWidth="148.0" text="Rodzaj naprawy" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="27.0" text="Lista klientów">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Button fx:id="pokaKlientow" layoutX="222.0" layoutY="33.0" mnemonicParsing="false" onAction="#showClients" text="Pokaz klientow" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="SE_RESIZE" />
+   </cursor>
+</AnchorPane>

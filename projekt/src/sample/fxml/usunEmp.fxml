@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UsunEmp">
+   <children>
+      <Label layoutX="20.0" layoutY="23.0" text="Podaj dane pracownika do usuniecia:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="63.0" text="Imie:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="111.0" text="Nazwisko:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="nazEmp" layoutX="107.0" layoutY="111.0" />
+      <TextField fx:id="imieEmp" layoutX="107.0" layoutY="63.0" />
+      <Button layoutX="20.0" layoutY="158.0" mnemonicParsing="false" onAction="#usunEmp" style="-fx-background-color: black;" text="Usuń pracownika" textFill="WHITE" />
+      <Label fx:id="resultRemEmp" layoutX="71.0" layoutY="191.0" prefHeight="18.0" prefWidth="207.0" />
+   </children>
+</AnchorPane>
